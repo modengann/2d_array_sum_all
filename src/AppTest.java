@@ -7,10 +7,24 @@
  import static org.junit.Assert.assertEquals;
 
  
+ import org.junit.Test;
+ import static org.junit.Assert.assertEquals;
 
-public class AppTest {
-  @Test
-  public void tests() {
-    
-  }
-}
+ 
+ class AppTest {
+     @Test
+     public void tests() {
+       int[][] a = {
+           {1,2,3},
+           {4,5,6},
+           {1,3,5}
+       };
+       assertEquals(30,App.sum2D(a));
+       int[][] b = {
+           {-2,-1,1},
+           {-2,2,2},
+           {123,123,123}
+       };
+       assertEquals(369,App.sum2D(b));
+     }
+ }
