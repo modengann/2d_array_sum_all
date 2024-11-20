@@ -11,7 +11,7 @@
  import static org.junit.Assert.assertEquals;
 
  
- class AppTest {
+ public class AppTest {
      @Test
      public void tests() {
        int[][] a = {
